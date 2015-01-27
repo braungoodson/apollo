@@ -3,6 +3,7 @@
 angular.module('apolloApp')
   .controller('MainCtrl', function ($scope, $http, socket, $interval) {
     $scope.options = {
+      //datasetStrokeWidth: 0.5,
       animation: false
     };
   //$scope.labels = [new Date().getTime(), new Date().getTime(), new Date().getTime(), new Date().getTime(), new Date().getTime(), new Date().getTime(), new Date().getTime()];
@@ -26,7 +27,7 @@ angular.module('apolloApp')
     $scope.data[0].push(Math.floor(Math.random()*100));
     $scope.data[1].shift();
     $scope.data[1].push(Math.floor(Math.random()*100));
-  },500);
+  },1000);
   
     $scope.awesomeThings = [];
 
