@@ -5,6 +5,9 @@ angular.module('apolloApp')
     $scope.menu = [{
       'title': 'Home',
       'link': '/'
+    },{
+      'title': 'Bots',
+      'link': '/bots'
     }];
 
     $scope.isCollapsed = true;
